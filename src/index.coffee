@@ -1,6 +1,6 @@
 import * as M from "@dashkite/masonry"
 import { pug } from "@dashkite/masonry-pug"
-import { File as F, Files as P } from "@dashkite/genie-files"
+import { File as F, Files as P } from "@dashkite/masonry-files"
 
 
 export default ( Genie ) ->
