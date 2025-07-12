@@ -12,8 +12,8 @@ importers:
         specifier: 0.14.0
         version: 0.14.0
       '@dashkite/masonry-hooks':
-        specifier: link:../masonry-hooks
-        version: link:../masonry-hooks
+        specifier: 0.1.0
+        version: 0.1.0
       '@dashkite/masonry-pug':
         specifier: link:../masonry-pug
         version: link:../masonry-pug
@@ -623,6 +623,9 @@ packages:
 
   '@dashkite/masonry-coffee@0.2.0':
     resolution: {integrity: sha512-xJO48SIRpsYbJF32CwpA6yeEJhNh+DtxCucyt4MNJqO0yru9X7hoxZsHneRoUE+kISD0KTO8DLQiHv21nU/V2A==}
+
+  '@dashkite/masonry-hooks@0.1.0':
+    resolution: {integrity: sha512-DeRzJH5TDMMK2glUwvNjCqzsKlTrBnJ4pZfYbSIbDvstBDy/6QpHlmEHsg1LL50Olx4fEtuwpjUQ69CT6EgNoQ==}
 
   '@dashkite/masonry-targets@0.1.0':
     resolution: {integrity: sha512-nb1N+oBZLw04AFUV49ZFLBAb/NQ0fJseO6ACrEfgXkHra2I1oxwHxLIKtMqWcedQa3QP2pqA/eeBmtGiTQGM0Q==}
@@ -2158,6 +2161,12 @@ snapshots:
       coffeescript: 2.7.0
     transitivePeerDependencies:
       - '@swc/helpers'
+
+  '@dashkite/masonry-hooks@0.1.0':
+    dependencies:
+      '@dashkite/masonry': 0.14.0
+    transitivePeerDependencies:
+      - supports-color
 
   '@dashkite/masonry-targets@0.1.0':
     dependencies:
