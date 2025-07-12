@@ -42,6 +42,6 @@
     "@dashkite/masonry": "link:../masonry",
     "@dashkite/masonry-hooks": "link:../masonry-hooks",
     "@dashkite/masonry-pug": "link:../masonry-pug",
-    "@dashkite/masonry-targets": "link:../masonry-targets"
+    "@dashkite/masonry-targets": "0.2.0"
   }
 }
