@@ -41,7 +41,7 @@
   "dependencies": {
     "@dashkite/masonry": "0.14.0",
     "@dashkite/masonry-hooks": "0.1.0",
-    "@dashkite/masonry-pug": "link:../masonry-pug",
+    "@dashkite/masonry-pug": "0.3.0",
     "@dashkite/masonry-targets": "0.2.0"
   }
 }
