@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/genie-pug",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Genie Preset for compiling Pug into HTML or JavaScript",
   "keywords": [],
   "homepage": "https://github.com/dashkite/genie-pug#readme",
