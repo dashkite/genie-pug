@@ -1,7 +1,10 @@
+import FS from "node:fs"
+import Path from "node:path"
 import * as M from "@dashkite/masonry"
-import * as Mh from "@dashkite/masonry-hooks"
+import * as H from "@dashkite/masonry-hooks"
 import pug from "@dashkite/masonry-pug"
 import T from "@dashkite/masonry-targets"
+import YAML from "js-yaml"
 
 export default ( Genie ) ->
 
@@ -13,7 +16,17 @@ export default ( Genie ) ->
 
     do M.start [
       T.glob options.targets
-      Mh.read
+      H.read
+      # ( context ) ->
+      #   if context.build.preset == "html"
+      #     path = Path.format
+      #       dir: Path.join ( context.root ? context.build.root ), context.source.directory
+      #       name: context.source.name
+      #       ext: ".yaml"
+      #     try
+      #       yaml = FS.readFileSync path
+      #     context.data = YAML.load yaml
+      #   context
       pug
       T.extension ".${ build.preset }"
       T.write "build/${ build.target }"
