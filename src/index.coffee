@@ -17,16 +17,6 @@ export default ( Genie ) ->
     do M.start [
       T.glob options.targets
       H.read
-      # ( context ) ->
-      #   if context.build.preset == "html"
-      #     path = Path.format
-      #       dir: Path.join ( context.root ? context.build.root ), context.source.directory
-      #       name: context.source.name
-      #       ext: ".yaml"
-      #     try
-      #       yaml = FS.readFileSync path
-      #     context.data = YAML.load yaml
-      #   context
       pug
       T.extension ".${ build.preset }"
       T.write "build/${ build.target }"
