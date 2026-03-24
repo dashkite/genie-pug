@@ -8,8 +8,6 @@ import YAML from "js-yaml"
 
 export default ( Genie ) ->
 
-  # re-reading the options makes his re-entrant and allows
-  # for dynamic configuration (ex: DRN changes)
   Genie.define "pug:build", "pug:clean", ->
     
     options = Genie.get "pug"
