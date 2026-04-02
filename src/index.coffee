@@ -15,7 +15,7 @@ export default ( Genie ) ->
     do M.start [
       T.glob options.targets
       H.read
-      pug
+      M.transform pug
       T.extension ".${ build.preset }"
       T.write "build/${ build.target }"
     ]
